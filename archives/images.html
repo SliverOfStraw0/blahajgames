@@ -6,42 +6,60 @@
         <title>(archive) videos</title>
     <link rel="stylesheet" href="../style.css">
 
-        <style>
+                <style>
 
-            .clickableBox {
-                width: 100px;
-                height: 100px;
-                display: inline-block;
-                text-decoration: none;
-                padding:10px;
-                text-align: center;
-                align-content: center;
-           }
+                    .clickableBox {
+                            width: 100px;
+                            height: 100px;
+                            display: inline-block;
+                            text-decoration: none;
+                            padding:10px;
+                            text-align: center;
+                            align-content: center;
+                     }
 
-           body{
-            text-align: bottom;
-           }
+                     body{
+                        text-align: bottom;
+                     }
 
-           .center {
-            display: flex;
-            float: left;
-            padding-right: 10px;
-            }
+                     
+                     .image-gallery {
+                         display: flex;
+                         flex-wrap: wrap;           
+                         gap: 10px;                
+                         justify-content: flex-start; 
+                         align-items: flex-start;  
+                     }
 
-        </style>
+                     
+                     .center {
+                        display: block;
+                        margin: 0;
+                     }
+
+                     .image-gallery img {
+                         display: block;
+                         height: auto;
+                     }
+
+                </style>
 
 
     </head>
 
     <body>
-        <div class="mainbitch">
+        <div class="mainbitch" style="margin-right: 10px;">
 
             <h1>Photo Archives</h1>
             <p>photos not showing up? Email me elara.shelley.dev@gmail.com</p>
             
-            <img src="/imgs\postcard stamp.png" width="200px" class="center" style="transform: translate(0px, -5px);">
-            <img src="/imgs\its_always_the_fucking_rich_ppl.jpg" width="400px" class="center">
-            <img src="/imgs\death bird.jpg" width="260px" class="center">
+                <div class="image-gallery">
+                    <img src="../imgs/postcard stamp.png" width="200" class="center" style="transform: translate(0px, -5px);" alt="postcard stamp">
+                    <img src="../imgs/its_always_the_fucking_rich_ppl.jpg" width="400" class="center" alt="its always the rich">
+                    <img src="../imgs/death bird.jpg" width="260" class="center" alt="death bird">
+                    <img src="../imgs/pov you.jpg" width="260" class="center" alt="pov you">
+                    <img src="../imgs/factory.jpg" width="260" class="center" alt="factory">
+                 </div>
           
         </div>
         
